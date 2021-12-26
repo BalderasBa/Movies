@@ -1,0 +1,86 @@
+:root {
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* End Global Rules ------------------------ */
+/* ------------------------ Start NAVBAR Section ------------------------ */
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+.navbar .navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+.navbar .logo-container {
+  flex: 1;
+}
+.logo-container .logo {
+  font-size: 30px;
+  color: #4dbf00;
+}
+.navbar .menu-container {
+  flex: 6;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+.menu-list .menu-item {
+  margin-left: 30px;
+}
+
+.menu-item.active {
+  font-weight: bold;
+}
+
+.navbar .profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-container .profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-container .profile-text {
+  margin: 0 20px;
+}
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  transition: 300ms;
+}
+.toggle .toggle-icon {
+  color: goldenrod;
+}
+.toggle .toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* ------------------------------------------------ */
