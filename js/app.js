@@ -14,7 +14,6 @@ ball.addEventListener("click", () => {
 
 //Arrows Right
 const arrows = document.querySelectorAll(".arrow-r");
-// const arrowsLeft = document.querySelectorAll(".arrow-l");
 const movieList = document.querySelectorAll(".movie-list");
 
 arrows.forEach((arrow, index) => {
@@ -26,14 +25,15 @@ arrows.forEach((arrow, index) => {
     clickCounter++;
 
     if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
-      movieLists[i].style.transform = `translateX(${
-        movieLists[i].computedStyleMap().get("transform")[0].x.value - 300
+      movieList[index].style.transform = `translateX(${
+        movieList[index].computedStyleMap().get("transform")[0].x.value - 300
       }px)`;
     } else {
-      movieLists[i].style.transform = "translateX(0)";
+      movieList[index].style.transform = "translateX(0)";
       clickCounter = 0;
     }
   });
 });
 
 //Arrows Left
+// const arrowsLeft = document.querySelectorAll(".arrow-l");
