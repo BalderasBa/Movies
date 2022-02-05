@@ -149,6 +149,7 @@ body {
   align-items: center;
   height: 300px;
   position: relative;
+  overflow: hidden;
 }
 .movie-list {
   margin-right: 30px;
