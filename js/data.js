@@ -1,0 +1,37 @@
+let listMovies = [
+  {
+    id: 1,
+    title: "Fast and Furious",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam, sapiente laboriosam possimus dolorum rerum numquamreprehenderit quo veritatis",
+    imageUrl: "./images/movies/fast and furious.jpg",
+    type: "movie",
+    inMYlist: false,
+  },
+  {
+    id: 2,
+    title: "Breaking Bad",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam, sapiente laboriosam possimus dolorum rerum numquamreprehenderit quo veritatis",
+    imageUrl: "./images/series/breaking-bad.jpg",
+    type: "series",
+    numOfSeason: 5,
+    numEps: 50,
+    inMYlist: false,
+  },
+  {
+    id: 3,
+    title: "Bleech",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam, sapiente laboriosam possimus dolorum rerum numquamreprehenderit quo veritatis",
+    imageUrl: "./images/anime/bleech.jpg",
+    type: "anime",
+    numEps: 300,
+    inMYlist: false,
+  },
+  {
+    id: 4,
+    title: "Athlete A",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam, sapiente laboriosam possimus dolorum rerum numquamreprehenderit quo veritatis",
+    imageUrl: "./images/documentaries/Athlete A.jpg",
+    type: "documentary",
+    inMYlist: false,
+  },
+];

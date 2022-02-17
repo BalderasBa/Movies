@@ -3,6 +3,18 @@ author: Hallousse Yehya (Balderas)
 Version: 1.0
 url:
 */
+/* VARIABLES */
+:root {
+  --color-main: #000;
+  --color-second: #fff;
+  --color-special: #4dbf00;
+
+  --padding-section8: 80px;
+  --padding-section5: 50px;
+
+  --transition-main: 400ms;
+  --transition-second: 1000ms;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +28,7 @@ body {
 .navbar {
   width: 100%;
   height: 50px;
-  background-color: black;
+  background-color: var(--color-main);
 }
 
 .navbar .navbar-container {
@@ -24,7 +36,7 @@ body {
   align-items: center;
   padding: 0 50px;
   height: 100%;
-  color: white;
+  color: var(--color-second);
   font-family: "Sen", sans-serif;
 }
 .navbar .logo-container {
@@ -32,7 +44,7 @@ body {
 }
 .logo-container .logo {
   font-size: 30px;
-  color: #4dbf00;
+  color: var(--color-special);
 }
 .navbar .menu-container {
   flex: 6;
@@ -67,13 +79,13 @@ body {
 .toggle {
   width: 40px;
   height: 20px;
-  background-color: white;
+  background-color: var(--color-second);
   border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
-  transition: 300ms;
+  transition: var(--transition-main);
 }
 .toggle .toggle-icon {
   color: goldenrod;
@@ -81,18 +93,19 @@ body {
 .toggle .toggle-ball {
   width: 18px;
   height: 18px;
-  background-color: black;
+  background-color: var(--color-main);
   position: absolute;
   right: 1px;
   border-radius: 50%;
   cursor: pointer;
+  transition: var(--transition-main);
 }
 /* ------------------------------------------------ */
 /* ------------------------ Start Sidebar section ------------------------ */
 .sidebar {
   width: 50px;
   height: 100%;
-  background-color: black;
+  background-color: var(--color-main);
   position: fixed;
   top: 0;
   display: flex;
@@ -102,7 +115,7 @@ body {
   padding-top: 60px;
 }
 .sidebar .sidebar-icon {
-  color: white;
+  color: var(--color-second);
   font-size: 20px;
   margin-bottom: 40px;
 }
@@ -111,7 +124,7 @@ body {
 .movie {
   background-color: #151515;
   min-height: calc(100vh - 50px);
-  color: white;
+  color: var(--color-second);
 }
 .movie .content {
   margin-left: 50px;
@@ -129,18 +142,18 @@ body {
   margin: 30px 0;
 }
 .movie .featured .feat-btn {
-  background-color: #4dbf00;
-  color: white;
+  background-color: var(--color-special);
+  color: var(--color-second);
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
   outline: none;
   font-weight: bold;
-  transition: 400ms ease-in-out;
+  transition: var(--transition-main) ease-in-out;
 }
 .movie .featured .feat-btn:hover {
-  color: #4dbf00;
-  background-color: white;
+  color: var(--color-special);
+  background-color: var(--color-second);
 }
 /* ------------------------------------------------ */
 .movies-list {
@@ -158,7 +171,7 @@ body {
   align-items: center;
   height: 300px;
   transform: translateX(0);
-  transition: all 1s ease-in-out;
+  transition: all var(--transition-second) ease-in-out;
 }
 
 .movie-list-item {
@@ -174,7 +187,7 @@ body {
   width: 270px;
   height: 200px;
   object-fit: cover;
-  transition: 1000ms ease-in-out;
+  transition: var(--transition-second) ease-in-out;
   border-radius: 20px;
 }
 .movie-wrapper .movie-list span {
@@ -187,7 +200,7 @@ body {
   top: -5px;
   left: 50px;
   opacity: 0;
-  transition: 1000ms ease-in-out;
+  transition: var(--transition-second) ease-in-out;
   user-select: none;
 }
 .movie-wrapper .movie-list p {
@@ -200,7 +213,7 @@ body {
   left: 50px;
   width: 230px;
   opacity: 0;
-  transition: 1000ms ease-in-out;
+  transition: var(--transition-second) ease-in-out;
   user-select: none;
 }
 /* ----------------------------------------------------------------------------------------------- */
@@ -210,17 +223,17 @@ body {
   bottom: 10px;
   left: 50px;
   padding: 10px 20px;
-  background-color: #4dbf00;
-  color: white;
+  background-color: var(--color-special);
+  color: var(--color-second);
   border-radius: 15px;
   outline: none;
   border: none;
   cursor: pointer;
-  transition: 300ms ease-in-out;
+  transition: var(--transition-main) ease-in-out;
 }
 .movie-wrapper .movie-list button:hover {
-  color: #4dbf00;
-  background-color: white;
+  color: var(--color-special);
+  background-color: var(--color-second);
 }
 .movie-wrapper .movie-list:hover p,
 .movie-wrapper .movie-list:hover span,
@@ -236,7 +249,7 @@ body {
   color: lightgray;
   opacity: 0.5;
   cursor: pointer;
-  transition: 400ms ease-in-out;
+  transition: var(--transition-main) ease-in-out;
 }
 .movies-list .arrow-l {
   left: 0;
@@ -246,31 +259,31 @@ body {
 }
 .movies-list .arrow-l:hover,
 .movies-list .arrow-r:hover {
-  color: white;
+  color: var(--color-second);
   opacity: 0.7;
 }
 /* -------------------------Active classes----------------------- */
 .movie.active {
-  background-color: #fff;
+  background-color: var(--color-second);
 }
 .movie-title.active {
-  color: #000;
+  color: var(--color-main);
 }
 .navbar-container.active {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--color-second);
+  color: var(--color-main);
 }
 .sidebar.active {
-  background-color: white;
+  background-color: var(--color-second);
 }
 .sidebar.active .sidebar-icon {
-  color: black;
+  color: var(--color-main);
 }
 .toggle.active {
-  background-color: black;
+  background-color: var(--color-main);
 }
 .toggle-ball.active {
-  background-color: white;
+  background-color: var(--color-second);
   transform: translateX(-20px);
 }
 
