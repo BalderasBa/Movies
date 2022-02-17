@@ -16,8 +16,8 @@ ball.addEventListener("click", () => {
 const arrows = document.querySelectorAll(".arrow-r");
 const movieList = document.querySelectorAll(".movie-list");
 
-arrows.forEach((arrow, index) => {
-  const itemNumber = movieList[index].querySelectorAll("img").length;
+arrows.forEach((arrow, i) => {
+  const itemNumber = movieList[i].querySelectorAll("img").length;
   let clickCounter = 0;
 
   arrow.addEventListener("click", () => {
@@ -25,11 +25,11 @@ arrows.forEach((arrow, index) => {
     clickCounter++;
 
     if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
-      movieList[index].style.transform = `translateX(${
-        movieList[index].computedStyleMap().get("transform")[0].x.value - 300
+      movieList[i].style.transform = `translateX(${
+        movieList[i].computedStyleMap().get("transform")[0].x.value - 300
       }px)`;
     } else {
-      movieList[index].style.transform = "translateX(0)";
+      movieList[i].style.transform = "translateX(0)";
       clickCounter = 0;
     }
   });
