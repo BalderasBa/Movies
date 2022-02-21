@@ -22,8 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Movie Website |login</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Movie Website |Movie Details</title>
   </head>
 
   <body>
@@ -31,7 +31,9 @@
     <div class="navbar">
       <div class="navbar-container">
         <div class="logo-container">
-          <h1 class="logo">Netflone</h1>
+          <a href="../index.html">
+            <h1 class="logo">Netflone</h1>
+          </a>
         </div>
         <div class="menu-container">
           <ul class="menu-list">
@@ -43,9 +45,11 @@
           </ul>
         </div>
         <div class="profile-container">
-          <img src="images/profile.jpg" alt="" class="profile-picture" />
+          <a href="./public/profile.html">
+            <img src="../images/profile.jpg" alt="" class="profile-picture" />
+          </a>
           <div class="profile-text">
-            <span>Profile</span>
+            <span>Settings</span>
             <i class="fas fa-caret-down"></i>
           </div>
           <div class="toggle">
@@ -67,6 +71,19 @@
       <i class="sidebar-icon fas fa-shopping-cart"></i>
     </div>
 
-    <script src="./js/app.js"></script>
+    <!-- ---- Content ---- -->
+    <div class="mylist">
+      <div class="mylist-item">
+        <img src="../images/movies/fast and furious.jpg" alt="" />
+        <span>Fast and Furious</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam,
+          sapiente laboriosam possimus dolorum rerum numquam reprehenderit quo
+          veritatis.
+        </p>
+        <button>Watch</button>
+      </div>
+    </div>
+    <script src="../js/app.js"></script>
   </body>
 </html>

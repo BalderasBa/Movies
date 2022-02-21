@@ -24,7 +24,7 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="./css/login.css" />
-    <title>Movie Website |Sign in</title>
+    <title>Movie Website |Sign up</title>
   </head>
 
   <body>
@@ -55,16 +55,18 @@
       </div>
     </div>
     <!-- Start Sidebar section -->
-
+    
     <section class="section-form">
-      <h2>Login User</h2>
-      <form action="">
-        <input type="text" placeholder="Enter User Name" id="username" />
-        <input type="password" placeholder="Enter Password" id="password" />
-        <input type="submit" value="Sign in" id="sign-in" />
-        Have not an account ! <a href="signup.html">Sign Up</a>
+      <h2>Register User</h2>
+      <form action="" novalidate>
+        <input type="text" id="username" placeholder="Enter User Name" />
+        <input type="email" id="email" placeholder="Enter Email" />
+        <input type="password" id="password" placeholder="Enter Password" />
+        <input type="submit" id="sign-up" value="Sign up" />
+        Have an account ! <a href="signin.html">Sign In</a>
       </form>
     </section>
+
     <script src="../js/app.js"></script>
   </body>
 </html>
