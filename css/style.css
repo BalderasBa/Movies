@@ -19,6 +19,8 @@ url:
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -45,16 +47,17 @@ body {
 .logo-container .logo {
   font-size: 30px;
   color: var(--color-special);
+  cursor: pointer;
 }
 .navbar .menu-container {
   flex: 6;
 }
 .menu-list {
   display: flex;
-  list-style: none;
 }
 .menu-list .menu-item {
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .menu-item.active {
@@ -72,9 +75,11 @@ body {
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 .profile-container .profile-text {
   margin: 0 20px;
+  cursor: pointer;
 }
 .toggle {
   width: 40px;
@@ -111,13 +116,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-around; */
   padding-top: 60px;
 }
 .sidebar .sidebar-icon {
   color: var(--color-second);
   font-size: 20px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 /* ------------------------------------------------ */
 /* ------------------------ Start Movie Content section ------------------------ */
@@ -150,6 +155,7 @@ body {
   outline: none;
   font-weight: bold;
   transition: var(--transition-main) ease-in-out;
+  cursor: pointer;
 }
 .movie .featured .feat-btn:hover {
   color: var(--color-special);
@@ -178,19 +184,19 @@ body {
   margin-right: 30px;
   position: relative;
 }
-.movie-list:hover.movie-list > img {
+.movie-list-item:hover > img {
   transform: scale(1.2);
   margin: 0 30px;
   opacity: 0.5;
 }
-.movie-wrapper .movie-list img {
+.movie-wrapper .movie-list-item img {
   width: 270px;
   height: 200px;
   object-fit: cover;
   transition: var(--transition-second) ease-in-out;
   border-radius: 20px;
 }
-.movie-wrapper .movie-list span {
+.movie-wrapper .movie-list-item span {
   background-color: #33333355;
   border-radius: 15px;
   padding: 0 10px;
@@ -203,7 +209,7 @@ body {
   transition: var(--transition-second) ease-in-out;
   user-select: none;
 }
-.movie-wrapper .movie-list p {
+.movie-wrapper .movie-list-item p {
   background-color: #33333355;
   border-radius: 15px;
   padding: 10px;
@@ -217,7 +223,7 @@ body {
   user-select: none;
 }
 /* ----------------------------------------------------------------------------------------------- */
-.movie-wrapper .movie-list button {
+.movie-wrapper .movie-list-item button {
   opacity: 0;
   position: absolute;
   bottom: 10px;
@@ -231,13 +237,13 @@ body {
   cursor: pointer;
   transition: var(--transition-main) ease-in-out;
 }
-.movie-wrapper .movie-list button:hover {
+.movie-wrapper .movie-list-item button:hover {
   color: var(--color-special);
   background-color: var(--color-second);
 }
-.movie-wrapper .movie-list:hover p,
-.movie-wrapper .movie-list:hover span,
-.movie-wrapper .movie-list:hover button {
+.movie-wrapper .movie-list-item:hover p,
+.movie-wrapper .movie-list-item:hover span,
+.movie-wrapper .movie-list-item:hover button {
   opacity: 1;
 }
 .movies-list .arrow-l,

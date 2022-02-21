@@ -36,4 +36,22 @@ arrows.forEach((arrow, i) => {
 });
 
 //Arrows Left
-// const arrowsLeft = document.querySelectorAll(".arrow-l");
+const arrowsLeft = document.querySelectorAll(".arrow-l");
+
+arrowsLeft.forEach((arrow, i) => {
+  const itemNumber = movieList[i].querySelectorAll("img").length;
+  let clickCountLeft = 0;
+
+  arrow.addEventListener("click", () => {
+    const ratio = Math.floor(window.innerWidth / 270);
+    clickCountLeft++;
+    if (itemNumber - (4 + clickCountLeft) + (4 - ratio) <= 0) {
+      movieList[i].style.transform = `translateX(${
+        movieList[i].computedStyleMap().get("transform")[0].x.value + 300
+      }px)`;
+    } else {
+      movieList[i].style.transform = "translateX(0)";
+      clickCountLeft = 0;
+    }
+  });
+});
