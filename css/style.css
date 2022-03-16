@@ -319,43 +319,26 @@ body {
   position: absolute;
   width: 90%;
   max-width: 350px;
-  background: var(--color-bg);
+  background: var(--color-main);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   overflow: hidden;
   top: calc(100% + 1px);
   right: 5%;
   max-height: 0;
-  transition: all var(--transition-primary);
+  transition: all var(--transition-main);
 }
-#dark-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: #ccc;
-  width: 45px;
-  border-radius: 15px;
-  padding: 2px 3px;
-  cursor: pointer;
-  display: flex;
-  transition: all var(--transition-primary);
-}
-#dark-btn span {
-  width: 18px;
-  height: 18px;
-  background: #fff;
-  border-radius: 50%;
-  display: inline-block;
-}
-#dark-btn.dark-btn-on {
-  padding-left: 23px;
-  background: #000;
-}
+
 .setting-menu-height {
   max-height: 450px;
 }
+.setting-menu p {
+  margin-top: 5px;
+  color: #fff;
+}
 .user-profile a {
-  color: #1876f2;
+  color: var(--color-special);
+  margin-right: 10px;
 }
 .user-profile img {
   width: 40px;
@@ -367,21 +350,24 @@ body {
 }
 .setting-menu-inner .user-profile {
   border-bottom: 1px solid #9a9a9a;
+  display: flex;
+  padding-bottom: 10px;
 }
 .setting-links {
   display: flex;
   align-items: center;
   margin: 15px 0;
 }
-.setting-links .settings-icon {
+.setting-links i {
   width: 38px;
   margin-right: 10px;
   border-radius: 50%;
+  color: antiquewhite;
 }
 .setting-links a {
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  color: var(--color-secondary);
+  color: #fff;
 }
