@@ -371,3 +371,38 @@ body {
   justify-content: space-between;
   color: #fff;
 }
+/* Responsive */
+/* Medium */
+@media (max-width: 991px) {
+  .logo-container .logo {
+    font-size: 20px;
+  }
+  .navbar .profile-container {
+    flex: 4;
+  }
+}
+
+/* small */
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+  .movie .content {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .logo-container .logo {
+    font-size: 25px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .movie-wrapper .movie-list-item img {
+    width: 340px;
+    height: 250px;
+  }
+
+  .navbar .profile-container {
+    flex: 5;
+  }
+}
