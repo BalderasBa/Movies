@@ -13,6 +13,7 @@
     <meta name="author" content="Hallousse Yehya (Balderas)" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
 
     <link
       rel="stylesheet"
@@ -48,7 +49,7 @@
           <a href="#">
             <img src="images/profile.jpg" alt="" class="profile-picture" />
           </a>
-          <div class="profile-text">
+          <div class="profile-text" onclick="settinsMenuToggle()">
             <span>Settings</span></a>
             <i class="fas fa-caret-down"></i>
           </div>
@@ -59,7 +60,56 @@
           </div>
         </div>
       </div>
+      
+      <!-- dropdown for setting menu -->
+      <div class="setting-menu">
+        <div id="dark-btn" class="dark-btn-on">
+          <span></span>
+        </div>
+        <div class="setting-menu-inner">
+          <div class="user-profile">
+            <a href="#"
+              ><img src="images/profile.jpg" alt="proffile picture"
+            /></a>
+            <div>
+              <p>Hallousse Yehya</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+
+          <div class="user-profile">
+            <i class="fa-solid fa-comment-plus"></i>
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new desigh</a>
+            </div>
+          </div>
+          <div class="setting-links">
+            <i class="fa-solid fa-bars-progress"></i>
+            <a href="#"
+              >Setting & Privacy
+              
+            /></a>
+          </div>
+          <div class="setting-links">
+          
+            <a href="#"
+              >Help & Support <img src="images/arrow.png" width="10px" alt=""
+            /></a>
+          </div>
+          <div class="setting-links">
+            <a href="#">Display & accessibility
+              </a>
+          </div>
+          <div class="setting-links">
+           
+            <a href="#"
+              >Logout </a>
+          </div>
+        </div>
+      </div>
     </div>
+    
     <!-- Start Sidebar section -->
     <div class="sidebar">
       <i class="sidebar-icon fas fa-search"></i>

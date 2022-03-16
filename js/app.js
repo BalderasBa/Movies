@@ -55,3 +55,9 @@ arrowsLeft.forEach((arrow, i) => {
     }
   });
 });
+// setting menu
+let settingMenu = document.querySelector(".setting-menu");
+
+function settinsMenuToggle() {
+  settingMenu.classList.toggle("setting-menu-height");
+}
